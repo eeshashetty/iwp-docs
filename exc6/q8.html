@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Q8</title>
+	</head>
+	<body>
+					
+		<textarea id="txt" rows="4" cols="30"></textarea><br><br>
+		<button onclick="return mod();">Modify</button>
+		<button onclick="window.location.reload();">Reset</button>
+	<script>
+	function mod() {
+		area = document.getElementById("txt");
+		area.style.color = "blue";
+		area.style.fontSize = "40px";
+		area.style.textDecoration = "underline";
+		area.style.fontStyle = "oblique";
+		area.style.fontFamily = "Courier New";
+		
+		return false;
+
+	}
+	</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Q4</title>
+	</head>
+	<body>
+		<form id = "form" onsubmit="return pal();">
+			String: <input type="text" id="a"/><br><br>
+			<input type="submit"/>
+		</form>
+		<p id = "res"></p>
+	<script>
+	function pal() {
+	var a = document.forms["form"]["a"].value
+	var r = a.split('').reverse().join('')	
+	
+	
+	if(r === a)
+		document.getElementById("res").innerHTML = "Palindrome"
+	else
+		document.getElementById("res").innerHTML = "Not a Palindrome"
+	
+	return false;
+	}
+	</script>
+	</body>
+</html>

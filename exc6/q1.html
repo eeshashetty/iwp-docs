@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Q1</title>
+	</head>
+	<body>
+		<form id = "form" onsubmit="return calc()">
+			a: <input type="number" id="a"/><br><br>
+			b: <input type="number" id="b"/><br><br>
+			<input type="submit"/>
+		</form>
+	<script>
+	function calc() {
+	var a = parseInt(document.forms["form"]["a"].value);
+	var b = parseInt(document.forms["form"]["b"].value);
+	
+		document.write(`a + b = ${a+b}<br><br>`);
+		document.write(`a - b = ${a-b}<br><br>`);
+		document.write(`a * b = ${a*b}<br><br>`);
+		document.write(`a / b = ${a/b}<br><br><br>`);
+	document.write('<button onclick="window.location.reload();">Try Again</button>');
+
+	}
+	</script>
+	</body>
+</html>

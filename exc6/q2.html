@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Q2</title>
+	</head>
+	<body>
+		<form id = "form" onsubmit="return fac();">
+			a: <input type="number" id="a"/><br><br>
+			<input type="submit"/>
+		</form>
+	<script>
+	function fac() {
+	var a = parseInt(document.forms["form"]["a"].value);
+	var afac = 1;
+	while(a!=1) {
+	afac *= a;
+	a--;
+	}
+	
+	document.write(`a! = ${afac}<br><br>`);
+	document.write('<button onclick="window.location.reload();">Try Again</button>');
+	
+	}
+	
+	</script>
+	</body>
+</html>

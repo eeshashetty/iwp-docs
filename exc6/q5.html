@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q5</title>
+</head>
+<body>
+    <input id="inp" type="number">
+    <button type="submit" onclick="prime()">Submit</button>
+    <p id="res"></p>
+    <script>
+        function prime() {
+            num = document.getElementById("inp").value;
+            console.log(num);
+            var flag;
+            if (num === 1) {
+                return false;
+            } else if(num === 2) {
+                return true;
+            } else {
+                for(var x = 2; x < num; x++) {
+                    if(num % x === 0) {
+                        flag = false;
+                        break;
+                    }
+                } 
+            }
+            if(flag === false) {
+                document.getElementById("res").innerHTML = "Not a prime number";
+            } else {
+                document.getElementById("res").innerHTML = "It is a prime number";
+            }
+        }
+    </script>
+</body>
+</html>

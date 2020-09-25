@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q3</title>
+</head>
+<body>
+    <input id="inp" type="number">
+    <button type="submit" onclick="fibonacci()">Submit</button>
+    <p id="output"></p>
+    <script> 
+            
+       function fibonacci() {
+            num = document.getElementById("inp").value;
+            console.log(num);
+            if(num==1) 
+                return 0; 
+            if(num==2) 
+                return 1; 
+            var num1=0, num2=1, sum, i=2; 
+            document.write(num1, "\n", num2, "\n");
+            while (i<num) { 
+                sum=num1+num2; 
+                num1=num2; 
+                num2=sum; 
+                i+=1;
+                document.write(num2, "\n");
+            }
+	       document.write("<br><br><button onclick = window.location.reload();>Try Again</button>");
+        } 
+        
+        </script> 
+</body>
+</html>
